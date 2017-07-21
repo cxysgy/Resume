@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>寿光耀个人简历</title>
+        <link rel="stylesheet" href="css/jianli.css">
+        <script type="text/javascript" src="Js/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="Js/angular.min.js"></script>
+		<script type="text/javascript" src="Js/jianli.js"></script>
+    </head>
+    <body>
+    	<div class="maxbox">
+    	<!-- 导航栏区域 -->
+    	<div class="nav" ng-app='Tabs' ng-controller="TabsController">
+    		<nav>
+    			<a href="javascript:;" ng-click="switch('jiben')">基本信息</a>
+    			<a href="javascript:;" ng-click="switch('zhuanye')">专业技能</a>
+    			<a href="javascript:;" ng-click="switch('jiaoyu')">教育背景</a>
+    			<a href="javascript:;" ng-click="switch('dome')">项目经验</a>
+    			<a href="javascript:;" ng-click="switch('pj')">自我评价</a>
+    			<a href="javascript:;" ng-click="switch('work')">工作经历</a>
+    		</nav>
+    		<div ng-switch on="type">
+    			<section class="cont" ng-switch-when="jiben">
+				<ol>
+					<li>【姓名：寿光耀】</li>
+					<li>【性别：男】</li>
+					<li>【年龄：24】</li>
+					<li>【籍贯：安徽省宿州市】</li>
+					<li>【现居地：南京 江宁】</li>
+					<li>【求职意向：web前端开发】</li>
+				</ol>
+			</section>
+			<section class="cont" ng-switch-when="zhuanye">
+				<ol>
+					<li>【专业技能】</li>
+					<li>【1.熟练使用div+css进行网页排版及设计】</li>
+					<li>【2.熟练使用JavaScript和jQuery】</li>
+					<li>【3.熟练运用PHP,AJAX,JSON去的数据展示在页面】</li>
+					<li>【4.熟悉运用AngularJs，MongoDB数据库的增删改查,Ejs模块技术】</li>
+					<li>【5.熟悉运用Mysql，SQL Serve数据库的使用】</li>
+				</ol>
+			</section>
+			<section class="cont" ng-switch-when="jiaoyu">
+				<ol>
+					<li>【教育背景】</li>
+					<li>【时间：2012.09-2016.06】</li>
+					<li>【学校：山东协和学院】</li>
+					<li>【学历：大专】</li>
+					<li>【专业：建筑工程技术】</li>
+				</ol>
+			</section>
+			<section class="cont" ng-switch-when="dome">
+				<ol>
+					<li>【项目经验】</li>
+					<li>【瀑布流图片展示效果】</li>
+					<li>【项目描述:通过点击出发ajax请求,将json数据通过php转换为可展现到前台页面的数据】</li>
+					<li>【豆瓣一刻】</li>
+					<li>【项目描述:通过使用angularjs框架及其路由技术在wamp集成环境下开发】</li>		
+				</ol>
+			</section>
+			<section class="cont" ng-switch-when="pj">
+				<ol>
+					<li>【自我评价】</li>
+					<li>【1.具有良好的学习能力】</li>
+					<li>【2.沟通能力强，善于团队协作共同布置的任务】</li>
+					<li>【3.抗压能力强，有较强的责任心，喜欢挑战，不断的完善自我】</li>
+					<li>【4.服从安排，肯吃苦耐劳】</li>
+				</ol>
+			</section>
+			
+			<section class="cont" ng-switch-when="work">
+				<ol>
+					<li>工作经历</li>
+					<li>【时间:2014.08-2017.01】</li>
+					<li>【公司:烟建集团济南分公司】</li>
+					<li>【项目:建大花园三期】</li>
+					<li>【职位:技术员，施工员】</li>
+					<li>【工作描述：1.通过该项目,懂得了如何去安排工作协调,施工质量的把关,团队的合作】</li>
+					<li>【2.按施工计划的要求,安排施工队的工作,并对施工队进行安全,施工做法技术交底的实施,监督,检查】</li>
+				</ol>
+			</section>
+
+    		</div>
+
+    	</div>
+    	<div class="banner_box">
+		<div class="imgs">
+			<img src="images/p1.jpg">
+			<img src="images/p2.jpg">
+			<img src="images/p3.jpg">
+			<img src="images/p4.jpg">
+		</div>
+		<div class="points">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<span class="left_btn">&lt;</span>
+		<span class="right_btn">&gt;</span>		
+	</div>
+	</div>
+
+    </body>
+</html>
